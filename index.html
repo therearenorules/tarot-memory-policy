@@ -19,15 +19,15 @@
 <body>
 
 <h1>타로 메모리 개인정보처리방침</h1>
-<p class="meta">앱: 타로 메모리 / Tarot Memory · 적용 버전: 1.0.0 · 최종 업데이트: 2026-06-12</p>
+<p class="meta">앱: 타로 메모리 / Tarot Memory · 적용 버전: 1.0.0+1 · 최종 업데이트: 2026-06-13</p>
 
 <h3>1. 서비스 개요</h3>
 <p>타로 메모리는 사용자가 오프라인에서 펼친 타로 스프레드를 사진 또는 수동 입력으로 기록하고, 질문·메모·태그·회고를 함께 저장하는 기록 도구입니다. 앱은 타로 해석, 운세, 자동 리딩, 추천 해석을 제공하지 않습니다.</p>
 
 <h3>2. 수집하는 데이터</h3>
-<p>개발자가 앱 밖으로 수집하는 데이터는 크래시 로그뿐입니다. 크래시 리포트는 기본 켜짐이며 설정에서 끌 수 있습니다.</p>
-<p>크래시 로그에는 앱 버전, OS 버전, 기기 모델, 오류 유형, 스택 트레이스처럼 앱 안정성 문제를 진단하는 데 필요한 기술 정보가 포함될 수 있습니다. 질문, 메모, 회고, 카드 사진, 백업 파일, CSV 내보내기 파일은 크래시 로그에 의도적으로 포함하지 않습니다.</p>
-<p>사용 분석, 광고 추적, 리플레이, 화면 녹화, 행동 분석 이벤트는 사용하지 않습니다.</p>
+<p>현재 베타 제출 빌드는 Sentry DSN을 주입하지 않아 크래시 리포팅 SDK가 초기화되지 않습니다. 따라서 개발자가 앱 밖으로 수집하는 사용자 데이터는 없습니다.</p>
+<p>정식 출시 전 크래시 리포팅을 활성화하기로 다시 결정하면, 앱 버전, OS 버전, 기기 모델, 오류 유형, 스택 트레이스처럼 앱 안정성 문제를 진단하는 데 필요한 기술 정보만 수집하도록 제한하고, 활성화 전에 본 정책과 스토어 개인정보 라벨을 함께 갱신합니다. 질문, 메모, 회고, 카드 사진, 백업 파일, CSV 내보내기 파일은 크래시 로그에 의도적으로 포함하지 않습니다.</p>
+<p>사용 분석, 광고 추적, 리플레이, 화면 녹화, 행동 분석 이벤트는 사용하지 않습니다. 앱 안의 사용 통계 화면은 기기 안의 데이터베이스를 읽어 표시만 하며 외부로 전송하지 않습니다.</p>
 
 <h3>3. 기기 안에만 저장되는 데이터</h3>
 <p>다음 데이터는 기본적으로 사용자의 기기 안에 저장됩니다.</p>
@@ -38,45 +38,45 @@
   <li>백업 파일(.tmbk), CSV 내보내기 파일</li>
   <li>학습 동의 여부와 기기 내 수정 로그</li>
 </ul>
-<p>사용자가 백업 파일이나 공유 이미지를 직접 다른 앱, 파일 앱, iCloud, Google Drive 등으로 저장하거나 공유하는 경우, 그 이후의 처리는 사용자가 선택한 외부 서비스의 약관과 개인정보처리방침을 따릅니다.</p>
+<p>사용자가 백업 파일이나 공유 이미지를 직접 다른 앱, 파일 앱, iCloud, Google Drive 등 본인 클라우드로 저장하거나 공유하는 경우, 그 이후의 처리는 사용자가 선택한 외부 서비스의 약관과 개인정보처리방침을 따릅니다. 개발자 서버에는 기록이나 백업이 저장되지 않습니다.</p>
 
 <h3>4. 학습용 데이터</h3>
-<p>현재 버전에는 학습용 업로드 경로가 없습니다. 설정의 학습 동의는 향후 기능을 위한 분리된 의사 표시이며, 현재는 기기 내 수정 로그 저장과만 연결됩니다. 동의가 켜져 있어도 질문, 메모, 회고, 전체 사진이 개발자 서버로 업로드되지 않습니다.</p>
+<p>MVP에는 학습용 업로드 경로가 없습니다. 설정의 학습 동의는 향후 기능을 위한 분리된 의사 표시이며, 현재는 기기 내 수정 로그 저장과만 연결됩니다. 동의가 켜져 있어도 질문, 메모, 회고, 전체 사진이 개발자 서버로 업로드되지 않습니다.</p>
 
 <h3>5. 크래시 리포팅 제공자</h3>
-<p>크래시 리포팅에는 Sentry가 사용됩니다. Sentry는 앱 안정성 문제를 진단하기 위한 서비스 제공자로만 사용되며, 광고·마케팅·사용자 프로파일링에 사용하지 않습니다. Sentry 설정은 개인 식별 정보 전송, 트레이싱, 리플레이, 사용자 콘텐츠 브레드크럼을 끈 상태로 구성됩니다.</p>
+<p>앱에는 Sentry 크래시 리포팅 코드가 준비되어 있지만, 현재 베타 제출 빌드는 DSN 미주입 상태라 SDK가 초기화되지 않고 크래시 데이터가 전송되지 않습니다. 향후 정식 출시 전에 크래시 리포팅을 활성화하면 Sentry는 앱 안정성 문제를 진단하기 위한 서비스 제공자로만 사용되며, 광고·마케팅·사용자 프로파일링에 사용하지 않습니다. 이 경우에도 개인 식별 정보 전송, 트레이싱, 리플레이, 사용자 콘텐츠 브레드크럼은 끈 상태로 유지하고, 활성화 전에 본 정책을 갱신합니다.</p>
 
 <h3>6. 권한 사용</h3>
 <ul>
   <li>카메라: 펼친 타로 스프레드를 촬영하고 기기 안에서 인식하기 위해 사용합니다.</li>
-  <li>사진 보관함: 사용자가 선택한 사진을 불러와 기록으로 저장하기 위해 사용합니다.</li>
-  <li>사진 저장: 사용자가 촬영 사진의 앨범 저장을 켠 경우에만 사용합니다.</li>
-  <li>인터넷: 사용자가 크래시 리포트를 켜 둔 경우 크래시 로그를 전송하기 위해 사용합니다.</li>
+  <li>사진 선택: Android Photo Picker와 iOS PHPicker 경로를 사용해 사용자가 고른 사진만 기기 안 기록으로 불러옵니다. 이 경로는 전체 사진 보관함 읽기 권한을 요구하지 않습니다.</li>
+  <li>사진 저장: iOS에서는 사용자가 설정에서 "촬영한 사진을 사진 앱에도 저장"을 켠 경우에만 앨범 추가 전용 권한을 사용합니다.</li>
+  <li>인터넷: 현재 베타 제출 빌드에서는 크래시 리포팅이 비활성이라 앱 기록 전송에 사용하지 않습니다. 향후 크래시 리포팅을 활성화하는 빌드에서만 크래시 로그 전송에 사용됩니다.</li>
 </ul>
 <p>알림은 현재 준비 중 자리만 제공하며, 알림 권한을 요청하지 않습니다.</p>
 
 <h3>7. 보관과 삭제</h3>
 <p>기기 안의 리딩 기록과 사진은 사용자가 앱 안에서 삭제하거나 앱을 삭제하면 제거됩니다. 사용자가 별도로 저장한 백업 파일, CSV 파일, 공유 이미지는 사용자가 저장한 위치에서 직접 관리해야 합니다.</p>
-<p>크래시 리포트는 서비스 운영상 필요한 기간 동안 보관될 수 있으며, 가능한 한 앱 안정성 진단에 필요한 범위로 제한합니다.</p>
+<p>현재 베타 제출 빌드는 개발자에게 크래시 리포트를 전송하지 않습니다. 향후 크래시 리포팅을 활성화하면 서비스 운영상 필요한 기간 동안 보관될 수 있으며, 가능한 한 앱 안정성 진단에 필요한 범위로 제한합니다.</p>
 
 <h3>8. 제3자 공유</h3>
-<p>개발자는 사용자의 리딩 기록, 질문, 메모, 회고, 사진을 판매하거나 광고 네트워크와 공유하지 않습니다. 크래시 로그는 앱 안정성 진단 목적의 서비스 제공자인 Sentry로만 전송될 수 있습니다.</p>
+<p>개발자는 사용자의 리딩 기록, 질문, 메모, 회고, 사진을 판매하거나 광고 네트워크와 공유하지 않습니다. 현재 베타 제출 빌드는 크래시 로그도 전송하지 않습니다. 향후 크래시 리포팅을 활성화하면 크래시 로그는 앱 안정성 진단 목적의 서비스 제공자인 Sentry로만 전송될 수 있습니다.</p>
 
 <h3>9. 문의</h3>
-<p>개인정보 문의 — 이메일: 추후 기재</p>
+<p>개인정보 문의는 <a href="mailto:changsekwon@gmail.com">changsekwon@gmail.com</a>로 연락해 주세요.</p>
 
 <div class="en">
 <h2>Privacy Policy — English Summary</h2>
-<p class="meta">App: Tarot Memory · Version basis: 1.0.0 · Last updated: 2026-06-12. The Korean text above is the full policy; this is a summary.</p>
+<p class="meta">App: Tarot Memory · Version basis: 1.0.0+1 · Last updated: 2026-06-13. The Korean text above is the full policy; this is a summary.</p>
 <ul>
   <li><strong>What the app is.</strong> Tarot Memory is a journaling tool for recording offline tarot spreads from a photo or manual entry. It does not provide tarot interpretation, fortune telling, or automated readings.</li>
-  <li><strong>Only crash logs leave your device.</strong> The only data the developer collects off device is crash log data (app version, OS version, device model, error type, stack trace), sent to Sentry solely for stability diagnostics. Crash reporting is on by default and can be turned off in Settings. No analytics, ad tracking, replay, or behavioral events are used.</li>
-  <li><strong>Everything else stays on device.</strong> Readings, questions, notes, retrospectives, tags, querent names, card layouts, attached photos, backup files (.tmbk), and CSV exports are stored locally. If you share or save them through an external service (Files, iCloud, Google Drive, etc.), that service's own policy applies.</li>
-  <li><strong>No learning-data upload.</strong> The current version has no upload path. The learning consent setting only relates to on-device correction logs.</li>
-  <li><strong>Permissions.</strong> Camera (photograph spreads, recognized on device), photo library (load a selected photo), add-to-photos (only if enabled), internet (crash logs only when enabled). No notification permission is requested.</li>
+  <li><strong>No developer collection in the beta build.</strong> The current beta submission build does not inject a Sentry DSN, so the crash reporting SDK is not initialized and no crash data is transmitted. If production crash reporting is enabled later, this policy and the store privacy labels will be updated first. No analytics, ad tracking, replay, or behavioral events are used.</li>
+  <li><strong>Everything else stays on device.</strong> Readings, questions, notes, retrospectives, tags, querent names, card layouts, attached photos, backup files (.tmbk), CSV exports, correction logs, and local usage statistics are stored locally. If you share or save them through an external service (Files, iCloud, Google Drive, etc.), that service's own policy applies. Reading records and backups are not stored on a developer server.</li>
+  <li><strong>No learning-data upload.</strong> The MVP has no upload path. The learning consent setting only relates to on-device correction logs.</li>
+  <li><strong>Permissions.</strong> Camera (photograph spreads, recognized on device), Android Photo Picker / iOS PHPicker (load only a selected photo without full photo-library read permission), iOS add-to-photos (only when enabled), internet (future crash logs only if intentionally activated). No notification permission is requested.</li>
   <li><strong>Deletion.</strong> On-device records are removed when you delete them in the app or delete the app. Exported files you saved elsewhere are managed by you.</li>
   <li><strong>No selling or ad sharing.</strong> Your records and photos are never sold or shared with advertising networks.</li>
-  <li><strong>Contact.</strong> Email: to be announced.</li>
+  <li><strong>Contact.</strong> Email: <a href="mailto:changsekwon@gmail.com">changsekwon@gmail.com</a>.</li>
 </ul>
 </div>
 
